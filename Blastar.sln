@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33027.164
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Blastar", "Blastar", "{46B7E920-50AC-4E01-9753-27DEEDED03A8}"
+	ProjectSection(SolutionItems) = preProject
+		index.html = index.html
+		script1.js = script1.js
+		script2.js = script2.js
+		style.css = style.css
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD581F7E-FB49-4246-BACC-82F195C27852}
+	EndGlobalSection
+EndGlobal

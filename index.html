@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html lang="fa" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>ستاره انفجار</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor="#333" onload="initBasicEnvironment(); blastar()">
+    <center>
+        <h1>ستاره انفجار</h1>
+        <img src="img/blastar0.ico" id="sprite0" style="display: none">
+        <img src="img/blastar1.ico" id="sprite2" style="display: none">
+        <img src="img/blastar2.ico" id="sprite3" style="display: none">
+        <img src="img/blastar3.ico" id="sprite4" style="display: none">
+        <img src="img/blastar4.ico" id="sprite5" style="display: none">
+        <img src="img/blastar5.ico" id="sprite6" style="display: none">
+        <img src="img/dragon.png" id="dragon" style="display: none">
+        <div>
+            <a href="https://douran.academy/">
+                <img style="margin-top: -10%; margin-left:-100%;" src="https://douran.academy/wp-content/uploads/2020/06/douran-academy-logo-1.png" alt="ad" width="200" height="100" />
+            </a>
+        </div>
+        <div>
+            <canvas height="600" width="750" id="canvas" style="width: 750px">[در مرورگر شما پشتیبانی نمیشود]</canvas>
+            <br><audio id="speaker0">[صدا در مرورگر شما پشتیبانی نمیشود]</audio><audio id="speaker1"></audio>
+            <label><input type="checkbox" id="muted" onclick="toggleMute(this)">بی صدا</label><br><br>
+        </div>
+        <table id="gamepad">
+            <tr>
+                <td>
+                    <input type="button" value="Y" id="yes"><input type="button" value="N" id="no"><br><br>
+                    <input type="button" value="      [spacebar]       " id="spcbar">
+                </td>
+                <td>
+                    <input type="button" value="^" id="up"><br>
+                    <input type="button" value="<" id="left"><input type="button" value="v" id="down"><input type="button" value=">" id="right">
+                </td>
+            </tr>
+        </table>
+        <p>&nbsp;</p>
+        <h2>دستورالعمل برای نسخه وب</h2>
+        <div>.برای شلیک استفاده کنید space bar از کلیدهای جهت دار برای حرکت دادن سفینه خود و از</div>
+    </center>
+    <script src="script1.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>

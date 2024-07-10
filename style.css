@@ -1,4 +1,6 @@
-﻿@font-face {
+﻿/* developed by Bardia-AA (¬‿¬) */
+
+@font-face {
     font-family: 'Commodore';
     src: url('YEKAN_PLUS.ttf');
 }
@@ -214,3 +216,5 @@ body.custom-cursor-enabled * {
         gap: 5px;
     }
 }
+
+/* developed by Bardia-AA (¬‿¬)  */

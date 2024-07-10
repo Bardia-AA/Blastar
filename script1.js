@@ -1,4 +1,6 @@
-﻿const kEmptyIterationMillis = 4;
+﻿// developed by Bardia-AA (⌐■_■)
+
+const kEmptyIterationMillis = 4;
 const kPutSpriteMillis = 40;
 const kMainLoopMillis = 150;
 const kRocketsLoopMillis = 150;
@@ -34,6 +36,7 @@ function blastarTune4() {
 
 function showAuthor() {
     screen(1, 2);
+    locate(10, 10);
     print(" Bardia-AA ویرایش و توسعه توسط");
     window.setTimeout(promptForInstructions, 350 * kEmptyIterationMillis);
 }
@@ -41,8 +44,9 @@ function showAuthor() {
 function promptForInstructions() {
     cls();
     locate(10, 5);
-    print("             ستاره انفجار");
+    print("             به بازی ستاره انفجار خوش آمدید");
     print("");
+    locate(12, 5);
     print("        برای ادامه روی یک کلید بزنید ");
     inKey(maybeGiveInstructions);
 }
@@ -218,9 +222,11 @@ function nextShip() {
         startLoop(mainLoop, kMainLoopMillis);
     } else {
         cls();
-        locate(0, 0);
-        print("                ستاره انفجار");
+        // locate(10, 0);
+        // print("                ستاره انفجار");
+        locate(12, 0);
         print("             ناوگان منهدم شد");
+        locate(14, 0);
         print("    را بفشارید Y اگر میخواهید دوباره تلاش کنید کلید ");
         inKey(maybeStartAnotherGame);
     }
@@ -230,6 +236,8 @@ function maybeStartAnotherGame(key) {
     if (key == 121 || key == 89) {
         blastar();
     } else {
+        cls();
+        locate(10, 0);
         print("                                بازی به اتمام رسید");
     }
 }
@@ -625,3 +633,5 @@ function beep() {
     addSoundWave(800, 0.25, 9 / 15, wave);
     playInSpeaker(wave);
 }
+
+// developed by Bardia-AA (⌐■_■)

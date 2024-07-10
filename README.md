@@ -1,6 +1,6 @@
 ## Overview
 
-**ستاره انفجار (Blastar)** is a web-based game inspired by Elon Musk's early game "Blastar." This game is developed by **Bardia-AA** and offers a retro gaming experience with modern web technologies. The game is implemented in HTML, CSS, and JavaScript, and includes a set of features and enhancements.
+**(Blastar)** is a web-based game inspired by Elon Musk's early game "Blastar." This game is developed by **Bardia-AA** and offers a retro gaming experience with modern web technologies. The game is implemented in HTML, CSS, and JavaScript, and includes a set of features and enhancements.
 
 ## Features
 

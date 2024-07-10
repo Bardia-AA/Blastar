@@ -4,21 +4,33 @@
 }
 
 body {
-    font-family: 'Verdana';
+    font-family: 'Verdana', sans-serif;
     text-align: center;
     color: #BBB;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 canvas {
     font-size: 24px;
+    margin: 20px 0;
+    border: 2px solid #555;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    height: auto;
 }
 
-h1 {
+h1, h2 {
     font-family: 'Commodore';
+    color: #FFF;
+    margin: 10px 0;
 }
 
-a:link {
+a {
     color: #888888;
+    text-decoration: none;
 }
 
 a:visited {
@@ -29,27 +41,176 @@ a:active {
     color: #DDDDDD;
 }
 
-td {
+.ad-container {
+    position: fixed;
+    top: 10px;
+    left: 10px;
     text-align: center;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
 }
 
-div {
-    width: 750px;
-    margin: 0 auto;
+.ad-container img {
+    border-radius: 50%;
+    border: 2px solid #555;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 150px;
+    height: 150px;
+}
+
+.game-container {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 750px;
+    text-align: center;
 }
 
 input[type=button] {
-    height: 120px;
-    width: 120px;
-    font-size: 200%;
-    box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    -ms-box-sizing: content-box;
-    -webkit-box-sizing: content-box;
+    height: 60px;
+    width: 60px;
+    font-size: 100%;
+    margin: 5px;
+    border: 1px solid #BBB;
+    border-radius: 5px;
+    background-color: #444;
+    color: #FFF;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+input[type=button]:hover {
+    background-color: #555;
+    transform: scale(1.1);
 }
 
 input#spcbar {
-    width: 250px;
+    width: 200px;
+}
+
+label {
+    color: #FFF;
+    font-size: 16px;
+}
+
+p {
+    color: #CCC;
+    font-size: 18px;
+    margin: 20px;
+}
+
+#gamepad-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+#gamepad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.arrow-keys {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Custom cursor */
+.custom-cursor {
+    cursor: none;
+    position: relative;
+}
+
+.custom-cursor::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+}
+
+body.custom-cursor-enabled {
+    cursor: none;
+}
+
+body.custom-cursor-enabled .custom-cursor::after {
+    display: block;
+}
+
+body.custom-cursor-enabled * {
+    cursor: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .ad-container img {
+        width: 100px;
+        height: 100px;
+    }
+
+    input[type=button] {
+        height: 50px;
+        width: 50px;
+        font-size: 90%;
+    }
+
+    input#spcbar {
+        width: 160px;
+    }
+
+    h1, h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ad-container img {
+        width: 80px;
+        height: 80px;
+    }
+
+    input[type=button] {
+        height: 40px;
+        width: 40px;
+        font-size: 80%;
+    }
+
+    input#spcbar {
+        width: 140px;
+    }
+
+    h1, h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    #gamepad-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #gamepad, .arrow-keys {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .arrow-keys {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
 }

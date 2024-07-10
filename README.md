@@ -8,7 +8,7 @@
 - **Sound Effects**: Engaging sound effects for a nostalgic experience.
 - **Keyboard and Gamepad Controls**: Use arrow keys for movement and the spacebar for shooting.
 - **Responsive Design**: Optimized for various screen sizes, including mobile devices.
-- **Multilingual Support**: The game interface is available in Persian (Farsi)
+- The game interface is available in Persian (Farsi)
 
 ## Getting Started
 

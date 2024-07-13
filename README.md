@@ -73,4 +73,3 @@ Contributions are welcome! If you have any suggestions or find any issues, pleas
 ## Acknowledgements
 
 - Inspired by Elon Musk's early game "Blastar".
-- Developed by [Bardia-AA](https://github.com/Bardia-AA).
